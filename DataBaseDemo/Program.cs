@@ -10,6 +10,11 @@ namespace DataBaseDemo
     {
         static void Main(string[] args)
         {
+            TestEntities2 proxy = new TestEntities2();
+            foreach (Table  p in proxy.Tables)
+            {
+                Console.WriteLine(p.Sex+p.Name);
+            }
         }
     }
 }
